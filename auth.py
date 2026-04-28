@@ -21,8 +21,20 @@ def check_auth(correct_password: str) -> bool:
         st.session_state["authenticated"] = True
         return True
 
-    st.markdown("## 🌿 Olii — Hawaiian Dictionary")
-    st.markdown("Enter the access password to continue.")
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("olii_logo.png", use_container_width=True)
+    st.markdown("")
+    st.markdown(
+        "<h2 style='text-align:center; color:#1A7A6D;'>"
+        "Olii — Hawaiian Dictionary</h2>",
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        "<p style='text-align:center; color:#8B7D6B;'>"
+        "Enter the access password to continue.</p>",
+        unsafe_allow_html=True,
+    )
 
     with st.form("login_form"):
         password_input = st.text_input(

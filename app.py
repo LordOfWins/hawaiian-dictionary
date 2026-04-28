@@ -138,27 +138,45 @@ st.markdown(f"""
 # Sidebar
 # ──────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### 🌿 Olii")
+    st.image("olii_logo.png", use_container_width=True)
+    st.markdown("")
+
+    st.markdown("### About Olii")
     st.markdown(
-        "A calm, patient guide to the Hawaiian language. "
-        "Olii bridges learners and Hawaiian culture, "
-        "prioritizing cultural integrity and accuracy."
+        "Language is more than just a communication tool — "
+        "it carries cultural identity, knowledge, and history. "
+        "**Olii** was born from the belief that technology can be "
+        "a guardian of culture, not a destroyer.\n\n"
+        "We are not a definitive dictionary or an ultimate authority. "
+        "Olii is a **patient, respectful guide**, supporting learners "
+        "in approaching ʻŌlelo Hawaiʻi with clarity, care, and "
+        "cultural awareness."
     )
     st.markdown("---")
-    st.markdown("### How to Use")
+
+    st.markdown("### The Olii Guidelines")
     st.markdown(
-        "Type a **Hawaiian** word to see its English meaning, "
-        "pronunciation, and cultural context. "
-        "You can also type in **English** to find the Hawaiian equivalent."
+        "**Context First** — Cultural and situational context "
+        "before direct translation.\n\n"
+        "**Supportive & Suggestive** — Corrections are offered gently, "
+        "never evaluatively.\n\n"
+        "**Built-in Humility** — For deeper learning and sacred chants, "
+        "users are directed to consult with human Kumu.\n\n"
+        "**Explicit Avoidance** — No aggressive tones, exclusionary "
+        "language, or authoritative voices."
     )
     st.markdown("---")
-    st.markdown("### Cultural Note")
+
+    st.markdown("### Ethical Reference")
     st.markdown(
-        "Hawaiian is a living language with deep cultural roots. "
-        "For sacred or restricted knowledge, Olii will guide you "
-        "to consult with a Kumu (teacher) or community elder."
+        "Grounded in the **UN Declaration on the Rights of Indigenous "
+        "Peoples** and **UNESCO AI Ethics Recommendations**.\n\n"
+        "Olii maintains strict standards of accuracy, avoids "
+        "unverified information, and clearly acknowledges "
+        "uncertainty when necessary."
     )
     st.markdown("---")
+
     st.caption(
         "Reference: Pukui & Elbert Hawaiian Dictionary tradition. "
         "This tool is part of a high school anthropology project."
